@@ -9,16 +9,13 @@ class Loginpage():
         self.login_classname= locate.login_classname
     
     def ENTERFIRSTNAME(self, username):
-        driver = self.driver
-        driver.find_element(By.XPATH, self.firstname_xpath).clear()
-        driver.find_element(By.XPATH, self.firstname_xpath).send_keys(username)
+        self.find_element(By.XPATH, self.firstname_xpath).clear()
+        self.find_element(By.XPATH, self.firstname_xpath).send_keys(username)
     
     def ENTERPASSWORD(self, password):
-        driver = self.driver
-        driver.find_element(By.XPATH, self.password_xpath).clear()
-        driver.find_element(By.XPATH, self.password_xpath).send_keys(password)
+        self.find_element(By.XPATH, self.password_xpath).clear()
+        self.find_element(By.XPATH, self.password_xpath).send_keys(password)
     
     def CLICK_LOGIN(self):
-        driver = self.driver
-        driver.find_element(By.CLASS_NAME, self.login_classname).click()
+        self.find_element(By.CLASS_NAME, self.login_classname).click()
     
