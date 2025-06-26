@@ -1,5 +1,5 @@
 from selenium import webdriver
-from POM_23062025.Locator.locator import Locate
+from POM_26062025.Locator.locator import Locate
 from selenium.webdriver.common.by import By
 
 class Login():
